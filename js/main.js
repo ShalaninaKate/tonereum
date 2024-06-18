@@ -407,7 +407,7 @@ if (animItems.length > 0) {
       if (animItemHeight > window.innerHeight) {
         animItemPoint = window.innerHeight - window.innerHeight / animStart;
       }
-      if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) {
+      if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight && animItemOffset + animItemHeight <= window.innerHeight + pageYOffset) {
         animItem.classList.add('loaded');
       } else {
         if (!animItem.classList.contains('_anim-no-hide')) {
