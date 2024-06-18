@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Main</title>
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <script defer src="js/main.js"></script>
+   	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+
+<body>
+
+  <div class="wrapper">
+    <header class="header animate">
+  <div class="header__container">
+    <a href="#" class="header__logo logo">Tonereum</a>
+    <button class="header__btn button">Tonereum Docs</button>
+
+  </div>
+</header>
+
+    <div class="page">
+            <section class="hero" data-prlx-mouse-wrapper>
+        <div class="hero__container">
+          <div class="hero__decor">
+            <picture class="hero__decor-1" data-prlx-mouse data-prlx-cx="-100" data-prlx-cy="-100">
+              <source srcset="./img/decor-1.webp" type="image/webp">
+              <img src="./img/decor-1.png" class="hero__decor-image hero__decor-image--1" width="" height=""
+                alt="circle">
+            </picture>
+            <picture class="hero__decor-2" data-prlx-mouse>
+              <source srcset="./img/decor-2.webp" type="image/webp">
+              <img src="./img/decor-2.png" class="hero__decor-image hero__decor-image--2" width="" height=""
+                alt="circle">
+            </picture>
+          </div>
+          <h1 class="hero__title "><span class="hero__title--top animate">Tonereum</span> <span
+              class="hero__title--bottom animate">EVM Layer for TON</span></h1>
+        </div>
+      </section>
+
+      <section class="advantages">
+  <div class="advantages__container">
+    <h2 class="advantages__title title animate">Преимущества сети:</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <div class="advantages__image animate">
+          <img class="advantages__icon" src="./img/advantages/01.svg" alt="icon">
+        </div>
+        <p class="advantages__text">Ethereum экосистема</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image animate">
+          <img class="advantages__icon" src="./img/advantages/02.svg" alt="icon">
+        </div>
+        <p class="advantages__text">EVM совместимость</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image animate">
+          <img class="advantages__icon" src="./img/advantages/03.svg" alt="icon">
+        </div>
+        <p class="advantages__text">Оплата газа в тоне</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image animate">
+          <img class="advantages__icon" src="./img/advantages/04.svg" alt="icon">
+        </div>
+        <p class="advantages__text">Высокая пропускная способность</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image animate">
+          <img class="advantages__icon" src="./img/advantages/05.svg" alt="icon">
+        </div>
+        <p class="advantages__text">Низкие комиссии в сети нативных монет (TON, ETH, USDT)</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image animate">
+          <img class="advantages__icon" src="./img/advantages/06.svg" alt="icon">
+        </div>
+        <p class="advantages__text">Возможность отправки транзакций без комиссии или с оплатой комиссии в токенах
+          отправки</p>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+      <section class="functionality ">
+  <div class="functionality__container">
+    <div class="functionality__item item-functionality item-functionality--evm" data-prlx-mouse-wrapper>
+      <div class="item-functionality__descr item-functionality__descr--evm">
+        <h2 class="item-functionality__title title animate">Portability& <br>
+          Core Composability</h2>
+        <div class="item-functionality__text item-functionality__text--evm">
+          <p class="item-functionality__paragraph">Tonereum preserves full compatibility with EVM bytecode and the
+            Ethereum RPC API--which means seamless portability for EVM developers who account for 98% of on-chain TVL
+            across all ecosystems.  </p>
+          <p class="item-functionality__paragraph">Supporting all of this in a single shard allows for powerful,
+            composable applications built on top of a global store of truth.</p>
+        </div>
+      </div>
+      <div class="item-functionality__decor decor-evm">
+        <div class="decor-evm__text">EVM</div>
+        <div class="decor-evm__image">
+          <picture class="decor-evm__picture-1" data-prlx-mouse data-prlx-cx="-100" data-prlx-cy="-100">
+            <source srcset="./img/decor-1.webp" type="image/webp">
+            <img loading="lazy" src="./img/decor-1.png" class="decor-evm__image decor-evm__image--1" width="" height=""
+              alt="circle">
+          </picture>
+          <picture class="decor-evm__picture-2" data-prlx-mouse>
+            <source srcset="../img/decor-2.webp" type="image/webp">
+            <img loading="lazy" src="./img/decor-2.png" class="decor-evm__image decor-evm__image--2" width="" height=""
+              alt="circle">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="functionality__item item-functionality item-functionality--protection">
+      <div class="item-functionality__descr item-functionality__descr--protection">
+        <h2 class="item-functionality__title title animate">Front Run
+          <br>
+          Attacks Protection</h2>
+        <div class="item-functionality__text">
+          <p class="item-functionality__paragraph">Our system is designed to ensure that transactions cannot be read by
+            external observers. This is achieved through a mechanism of trusted validators.</p>
+        </div>
+      </div>
+      <div class="item-functionality__decor decor-protection">
+        <div class="decor-protection__image">
+          <picture class="decor-protection__picture">
+            <source srcset="./img/decor-1.webp" type="image/webp">
+            <img loading="lazy" src="./img/decor-2.png" class="decor-protection__circle" width="" height=""
+              alt="circle">
+          </picture>
+          <img  src="./img/functionality/protection.svg" class="decor-protection__icon" width="" height=""
+            alt="icon-protection">
+        </div>
+      </div>
+    </div>
+
+    <div class="functionality__item item-functionality item-functionality--bridge">
+      <div class="item-functionality__descr item-functionality__descr--bridge">
+        <h2 class="item-functionality__title title animate">MultiChain Bridge</h2>
+        <div class="item-functionality__text">
+          <p class="item-functionality__paragraph">DAO Powered Bridge between TON and EVM networks</p>
+        </div>
+      </div>
+      <div class="item-functionality__row">
+        <ul class="item-functionality__cards">
+          <li class="item-functionality__card">
+            <h3 class="item-functionality__card-title">Перенос монет между различными сетями</h3>
+          </li>
+          <li class="item-functionality__card">
+            <h3 class="item-functionality__card-title">Стейкинг</h3>
+            <p class="item-functionality__card-text">позволяет вносить любым людям депозиты и зарабатывать на проценте
+              от
+              обмена</p>
+          </li>
+          <li class="item-functionality__card">
+            <h3 class="item-functionality__card-title">Доход от стейкинга</h3>
+            <p class="item-functionality__card-text">в сети нативных монет <br>
+              (TON, ETH, USDT) до 20% годовых</p>
+          </li>
+          <li class="item-functionality__card">
+            <h3 class="item-functionality__card-title">Telegram Mini App available</h3>
+          </li>
+        </ul>
+        <div class="item-functionality__decor decor-phone">
+          <div class="decor-phone__image animate">
+            <picture class="decor-phone__picture ">
+              <source srcset="./img/functionality/phone1.webp" type="image/webp">
+              <img loading="lazy" src="./img/functionality/phone1.png" class="decor-phone__img" width="" height=""
+                alt="phone">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="functionality__item item-functionality item-functionality--swap">
+      <div class="item-functionality__descr item-functionality__descr--swap">
+        <h2 class="item-functionality__title title animate">Обмен при бридже</h2>
+        <div class="item-functionality__text">
+          <p class="item-functionality__paragraph">позволяет, например, при внесении ETH обменять ее по курсу на TON
+            и получить для выплаты в нативной сети TON</p>
+        </div>
+      </div>
+      <div class="item-functionality__decor decor-phone decor-phone--2">
+        <div class="decor-phone__image animate">
+          <picture class="decor-phone__picture">
+            <source srcset="./img/functionality/phone2.webp" type="image/webp">
+            <img loading="lazy" src="./img/functionality/phone2.png" class="decor-phone__img" width="" height=""
+              alt="phone">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+       <section class="distribution section-offset">
+   <div class="distribution__container">
+     <div class="distribution__diagram diagram">
+       <h3 class="diagram__title">Token distribution</h3>
+       <div class="diagram__chart">
+         <svg id="chart" width="295" height="295" viewBox="-150 -150 300 300">
+           <g id="chartGroup" transform="translate(0, 0)">
+             <!-- Сюда будут добавляться сегменты и подписи -->
+           </g>
+         </svg>
+         <ul class="diagram__chart-labels">
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--1"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--2"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--3"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--4"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--5"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--6"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--7"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+           <li class="diagram__chart-label">
+             <div class="diagram__chart-label-color diagram__chart-label-color--8"></div>
+             <p class="diagram__chart-label-text">Text text</p>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <div class="distribution__table table">
+
+
+         <ul class="table__row">
+           <li class="table__header table__header--1"></li>
+           <li class="table__header table__header--2">Всего</li>
+           <li class="table__header table__header--3">Всего</li>
+           <li class="table__header table__header--4">Всего</li>
+           <li class="table__header table__header--5">Всего</li>
+         </ul>
+
+
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+         <ul class="table__row">
+           <li class="table__data table__data--1">Ethereum</li>
+           <li class="table__data table__data--2">800,000,000</li>
+           <li class="table__data table__data--3">37%</li>
+           <li class="table__data table__data--4">37%</li>
+           <li class="table__data table__data--5">Текст текст текст текст
+             Текст текст текст текст</li>
+         </ul>
+       </div>
+
+   </div>
+ </section>
+
+
+      <section class="roadmap section-offset">
+  <div class="roadmap__container">
+    <h2 class="roadmap__title title animate">Roadmap для инвесторов</h2>
+    <ul class="roadmap__list">
+      <li class="roadmap__item item-roadmap item-roadmap--top animate">
+        <div class="item-roadmap__header">
+          <span class="item-roadmap__count">1</span>
+          <img class="item-roadmap__arrow" src="./img/svg/arrow.svg" alt="icon-arrow">
+        </div>
+        <h3 class="item-roadmap__title">Запуск EVM Testnet</h3>
+      </li>
+      <li class="roadmap__item item-roadmap item-roadmap--top animate">
+        <div class="item-roadmap__header">
+          <span class="item-roadmap__count">2</span>
+          <img class="item-roadmap__arrow" src="./img/svg/arrow.svg" alt="icon-arrow">
+        </div>
+        <h3 class="item-roadmap__title">Запуск Bridge Testnet, </h3>
+        <p class="item-roadmap__text">включая DAO внутри сети</p>
+      </li>
+      <li class="roadmap__item item-roadmap item-roadmap--top animate">
+        <div class="item-roadmap__header">
+          <span class="item-roadmap__count">3</span>
+          <img class="item-roadmap__arrow item-roadmap__arrow--down" src="./img/svg/arrow.svg" alt="icon-arrow">
+        </div>
+        <h3 class="item-roadmap__title">Запуск тестовых протоколов внутри сети, </h3>
+        <p class="item-roadmap__text">включая протокол управления прибыли с газа (Treasury)</p>
+      </li>
+      <li class="roadmap__item item-roadmap item-roadmap--bottom animate">
+        <div class="item-roadmap__header">
+          <span class="item-roadmap__count">4</span>
+          <img class="item-roadmap__arrow" src="./img/svg/arrow.svg" alt="icon-arrow">
+        </div>
+        <h3 class="item-roadmap__title">BUILD программа. Построение основных проектов в сети как внутри команды и
+          привлечением партнеров, уже имеющихся на рынке. </h3>
+        <p class="item-roadmap__text">Для обеспечения работоспособности сети требуются такие протоколы как AMM DEX,
+          Lending, Liquid Staking, Farming/Autofarming, AlgoStables.</p>
+      </li>
+      <li class="roadmap__item item-roadmap item-roadmap--bottom animate">
+        <div class="item-roadmap__header">
+          <span class="item-roadmap__count">5</span>
+          <img class="item-roadmap__arrow" src="./img/svg/arrow.svg" alt="icon-arrow">
+        </div>
+        <h3 class="item-roadmap__title">Запуск мейннета и Поинт программа для пользователей и создателей внутри
+          сети</h3>
+
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="build section-offset">
+  <div class="build__container">
+    <h2 class="build__title">Build by</h2>
+    <ul class="build__list">
+      <li class="build__item">
+        <img class="build__item-logo" src="./img/build/defi.svg" alt="logo-defi">
+      </li>
+      <div class="build__item">
+        <img class="build__item-logo" src="./img/build/fintop.svg" alt="logo-fintop">
+        <p class="build__item-text">FINTOP</p>
+      </div>
+    </ul>
+  </div>
+</section>
+
+      <section class="people section-offset">
+  <div class="people__container">
+    <h2 class="people__title people__title--right title animate">Team</h2>
+    <ul class="people__list">
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/team/01.webp" type="image/webp">
+          <img src="./img/team/01.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+        <h3 class="item-people__title">Помазанов Павел</h3>
+        <p class="item-people__text">Fintech, Defi 7+ years</p>
+        <p class="item-people__text">DEF.I Co-founder</p>
+      </li>
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/team/02.webp" type="image/webp">
+          <img src="./img/team/02.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+
+        <h3 class="item-people__title">Антонина Ощепкова</h3>
+        <p class="item-people__text">CBDO</p>
+        <p class="item-people__text">Что-то</p>
+      </li>
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/team/03.webp" type="image/webp">
+          <img src="./img/team/03.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+        <h3 class="item-people__title">Владислав Рутский</h3>
+        <p class="item-people__text">CAO</p>
+        <p class="item-people__text">Что-то</p>
+      </li>
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/team/04.webp" type="image/webp">
+          <img src="./img/team/04.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+        <h3 class="item-people__title">Помазанов Павел</h3>
+        <p class="item-people__text">Партнёр</p>
+        <p class="item-people__text">Что-то</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="partners section-offset">
+  <div class="partners__container">
+    <h2 class="partners__title">Partners</h2>
+    <div class="partners__slider partners-slider swiper">
+      <div class="partners-slider__wrapper swiper-wrapper">
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+        <div class="partners-slider__slide swiper-slide">
+          <div class="partners-slider__image">
+            <img src="./img/partners/01.svg" alt="binance">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="people section-offset">
+  <div class="people__container">
+    <h2 class="people__title people__title title animate">Advisors</h2>
+    <ul class="people__list">
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/advisors/01.webp" type="image/webp">
+          <img src="./img/advisors/01.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+
+        <h3 class="item-people__title">Федя</h3>
+        <p class="item-people__text">Fintech, Defi 6+ years</p>
+        <p class="item-people__text">Alfa-Bank, Zunami, Resolv Labs</p>
+      </li>
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/advisors/02.webp" type="image/webp">
+          <img src="./img/advisors/02.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+        <h3 class="item-people__title">Кто-то</h3>
+        <p class="item-people__text">Что-то</p>
+        <p class="item-people__text">Что-то</p>
+      </li>
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/advisors/03.webp" type="image/webp">
+          <img src="./img/advisors/03.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+        <h3 class="item-people__title">Кто-то</h3>
+        <p class="item-people__text">Что-то</p>
+        <p class="item-people__text">Что-то</p>
+      </li>
+      <li class="people__item item-people">
+        <picture>
+          <source srcset="./img/advisors/04.webp" type="image/webp">
+          <img src="./img/advisors/04.jpg" class="item-people__image" width="" height="" alt="people">
+        </picture>
+        <h3 class="item-people__title">Кто-то</h3>
+        <p class="item-people__text">Что-то</p>
+        <p class="item-people__text">Что-то</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+    </div>
+    <footer class="footer animate">
+  <div class="footer__container">
+    <a href="#" class="footer__logo logo">Tonereum</a>
+    <button class="footer__btn button">Tonereum Docs</button>
+
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
