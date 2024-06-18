@@ -1001,6 +1001,8 @@ body._lock {
   }
 }
 .decor-protection__icon {
+  position: relative;
+  z-index: 2;
   margin-left: -15.3125rem;
   margin-top: 3.4375rem;
 }
@@ -1079,11 +1081,6 @@ body._lock {
   width: 75.2%;
   -webkit-transition: top 0.6s ease 0.3s;
   transition: top 0.6s ease 0.3s;
-}
-@media (max-width: 48em) {
-  .decor-phone__picture {
-    top: 3.75rem;
-  }
 }
 .decor-phone__img {
   -webkit-filter: drop-shadow(-23px 22px 41px rgba(0, 0, 0, 0.5));
@@ -1452,7 +1449,7 @@ body._lock {
 }
 @media (max-width: 48em) {
   .diagram {
-    padding: 2.1875rem 1.25rem 4.0625rem;
+    padding: 2.1875rem 0.9375rem 4.0625rem;
   }
 }
 @media (max-width: 21.875em) {
@@ -1486,6 +1483,7 @@ body._lock {
 }
 @media (max-width: 48em) {
   .diagram__chart {
+    justify-items: center;
     margin: 0 auto;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;

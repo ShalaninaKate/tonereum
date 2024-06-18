@@ -13273,8 +13273,8 @@ data.forEach(segment => {
 
   // Вычисление координат для подписи
   const labelAngle = startAngle + segment.size * Math.PI; // Угол для размещения подписи на средней линии сегмента
-  const labelX = centerX + (radius + 15) * Math.cos(labelAngle); // Расстояние от центра + 20 для отступа
-  const labelY = centerY + (radius + 15) * Math.sin(labelAngle); // Расстояние от центра + 20 для отступа
+  const labelX = centerX + (radius + 12) * Math.cos(labelAngle); // Расстояние от центра + 20 для отступа
+  const labelY = centerY + (radius + 12) * Math.sin(labelAngle); // Расстояние от центра + 20 для отступа
 
   // Рассчитываем проценты и округляем до десятых, только если есть десятые
   let percentage = (segment.size * 100).toFixed(1);
