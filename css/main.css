@@ -1211,17 +1211,41 @@ body._lock {
   -webkit-transition: opacity 1.2s ease 0.2s;
   transition: opacity 1.2s ease 0.2s;
 }
+@media (max-width: 48em) {
+  .item-roadmap:nth-child(2) {
+    -webkit-transition: opacity 1.2s ease 0s;
+    transition: opacity 1.2s ease 0s;
+  }
+}
 .item-roadmap:nth-child(3) {
   -webkit-transition: opacity 1.2s ease 0.4s;
   transition: opacity 1.2s ease 0.4s;
+}
+@media (max-width: 48em) {
+  .item-roadmap:nth-child(3) {
+    -webkit-transition: opacity 1.2s ease 0s;
+    transition: opacity 1.2s ease 0s;
+  }
 }
 .item-roadmap:nth-child(4) {
   -webkit-transition: opacity 1.2s ease 0.6s;
   transition: opacity 1.2s ease 0.6s;
 }
+@media (max-width: 48em) {
+  .item-roadmap:nth-child(4) {
+    -webkit-transition: opacity 1.2s ease 0s;
+    transition: opacity 1.2s ease 0s;
+  }
+}
 .item-roadmap:nth-child(5) {
   -webkit-transition: opacity 1.2s ease 0.8s;
   transition: opacity 1.2s ease 0.8s;
+}
+@media (max-width: 48em) {
+  .item-roadmap:nth-child(5) {
+    -webkit-transition: opacity 1.2s ease 0s;
+    transition: opacity 1.2s ease 0s;
+  }
 }
 
 @media (max-width: 48em) {
